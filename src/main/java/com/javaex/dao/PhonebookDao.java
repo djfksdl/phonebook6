@@ -41,6 +41,7 @@ public class PhonebookDao {
 		
 		//selectOne으로 vo받아오기
 		Map<String, Object> pMap = sqlSession.selectOne("phonebook.selectOne", no);
+		//꺼내쓸때 키값(이름)을 보통 name,authUser같이 String으로 쓰기 때문에 앞에 써주고(꺼내주는거), Object는 데이터들(뭔지는 모르니까 오브젝트로 받기)(받는거)
 		
 		return pMap;
 	}
