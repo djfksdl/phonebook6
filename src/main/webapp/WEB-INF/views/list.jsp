@@ -29,9 +29,9 @@
 					<td>${personVo.company}</td>
 				</tr>
 				<tr>
-					<td><a href="/phonebook6/delete?no=${personVo.personId}">[삭제]</a>
+					<td><a href="${pageContext.request.contextPath}/delete?no=${personVo.personId}">[삭제]</a>
 					</td>
-					<td><a href="/phonebook6/mform?no=${personVo.personId}">[수정]</a>
+					<td><a href="${pageContext.request.contextPath}/mform?no=${personVo.personId}">[수정]</a>
 					</td>
 				</tr>
 		

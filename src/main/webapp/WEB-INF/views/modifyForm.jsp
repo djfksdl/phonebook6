@@ -15,7 +15,7 @@
 		전화번호를 수정하려면<br> 아래 항목을 기입하고 "수정" 버튼을 클릭하세요
 	</p>
 
-	<form action="/phonebook6/modify" method="">
+	<form action="${pageContext.request.contextPath}/modify" method="">
 		<div>
 			<label>이름(name)</label> <input type="text" name="name" value="${requestScope.pMap.name}">
 		</div>
